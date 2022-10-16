@@ -1,0 +1,27 @@
+.sidebar {
+  left: 0;
+  top: 62px;
+  height: 100%;
+  background: white;
+  position: fixed;
+  width: 250px;
+  padding: 20px;
+  transition: 0.2s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transform: translateX(-250px);
+}
+.sidebar__open {
+  transform: translateX(0);
+}
+.sidebar__link {
+  display: block;
+  border-radius: 12px;
+  border: 2px solid white;
+  transition: 0.2s;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  color: var(--primary);
+}
+.sidebar__link:hover {
+  color: var(--primary-hover);
+}

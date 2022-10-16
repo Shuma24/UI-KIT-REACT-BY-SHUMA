@@ -1,0 +1,166 @@
+:root {
+  --white-label: #ffffff;
+  --black-label: rgba(0, 0, 0, 0.87);
+  --default-background: rgba(0, 0, 0, 0.1);
+  --primary: #2196f3;
+  --primary-hover: #56b0ffd7;
+  --warn: #e10050;
+  --warn-hover: #c53668;
+  --success: #00c48c;
+  --success-hover: #7ddfc3;
+}
+
+.button {
+  max-width: inherit;
+  min-height: inherit;
+  font-family: Roboto;
+  line-height: 18px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button.small {
+  padding: 5px 10px;
+  font-size: 12px;
+  letter-spacing: 0.14px;
+}
+.button.medium {
+  padding: 10px 15px;
+  font-size: 14px;
+  letter-spacing: 0.16px;
+}
+.button.large {
+  padding: 15px 25px;
+  letter-spacing: 1.25px;
+  font-size: 16px;
+}
+.button_icon {
+  margin: 0 0 0 5px;
+}
+.button.default {
+  background: var(--default-background);
+  color: var(--default-text);
+}
+.button.default:hover {
+  background: #faf9f9;
+  transition: 0.7s;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button.default_text {
+  background: inherit;
+}
+.button.default_outlined {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: inherit;
+}
+.button.default_outlined:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.87);
+  transition: 0.5s;
+}
+.button.success {
+  background: var(--success);
+  color: var(--white-label);
+}
+.button.success:hover {
+  background: var(--success-hover);
+  transition: 0.7s;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button.success_text {
+  color: var(--success);
+  background: inherit;
+}
+.button.success_text:hover {
+  font-weight: 600;
+  transition: 0.3ms;
+}
+.button.success_outlined {
+  border: 1px solid var(--success);
+  background: inherit;
+}
+.button.success_outlined:hover {
+  color: var(--white-label);
+  background: var(--success);
+  transition: 0.5s;
+}
+.button.primary {
+  color: var(--white-label);
+  background: var(--primary);
+}
+.button.primary:hover {
+  background: var(--primary-hover);
+  transition: 0.5s;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button.primary_text {
+  background: inherit;
+  color: var(--primary);
+}
+.button.primary_text:hover {
+  font-weight: 600;
+  transition: 0.3ms;
+}
+.button.primary_outlined {
+  border: 1px solid var(--primary);
+  background: inherit;
+  color: var(--primary);
+}
+.button.primary_outlined:hover {
+  color: var(--white-label);
+  background: var(--primary);
+  transition: 0.5s;
+}
+.button.warn {
+  color: var(--white-label);
+  background: var(--warn);
+}
+.button.warn:hover {
+  background: var(--warn-hover);
+  transition: 0.5s;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button.warn_text {
+  background: inherit;
+  color: var(--warn);
+}
+.button.warn_text:hover {
+  font-weight: 600;
+  transition: 0.3ms;
+}
+.button.warn_outlined {
+  border: 1px solid var(--warn);
+  background: inherit;
+  color: var(--warn);
+}
+.button.warn_outlined:hover {
+  color: white;
+  background: var(--warn);
+  transition: 0.5s;
+}
+.button.disabled:disabled {
+  color: rgba(0, 0, 0, 0.36);
+  background: rgba(0, 0, 0, 0.1);
+  cursor: not-allowed;
+}
+.button.disabled:disabled:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.button.disabled_text {
+  background: inherit;
+  cursor: not-allowed;
+}
+.button.disabled_outlined {
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  background: inherit;
+  cursor: not-allowed;
+}
+.button.disabled_outlined:hover {
+  color: rgba(0, 0, 0, 0.36);
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}

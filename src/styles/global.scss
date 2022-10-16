@@ -1,0 +1,47 @@
+@import 'null.scss';
+@import 'fonts.scss';
+
+:root {
+	--primary: #2196f3;
+	--primary-hover: #5eaff0;
+	--secondary: #e10050;
+}
+
+.items-title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 0.54);
+	margin: 0 0 20px 0;
+	@media (max-width: 650px) {
+		text-align: center;
+	}
+}
+
+.line {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 0 20px 0;
+
+	button {
+		&:not(:last-child) {
+			margin: 0 20px 0 0;
+		}
+	}
+
+	@media (max-width: 650px) {
+		flex-direction: column;
+		button {
+			&:not(:last-child) {
+				margin: 0 0 20px 0;
+			}
+		}
+	}
+
+	&_block {
+		display: block;
+	}
+}
